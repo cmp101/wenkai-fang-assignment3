@@ -1,0 +1,168 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.text-right {
+  float: right !important;
+}
+
+.post-title {
+  font-size: 16px;
+  text-decoration: none;
+  margin-bottom: 0px !important;
+}
+
+.post-title a {
+  color: black !important;
+}
+
+.post-title:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+.panel-title {
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: white !important;
+}
+
+.nav-button {
+  border: 1px solid;
+  padding: 8px !important;
+  margin-top: 8px !important;
+  font-size: 16px;
+  background: inherit !important;
+  color: white !important;
+  border-radius: 7px;
+}
+
+.container {
+  background: beige;
+  height: 100vh;
+  max-width: 100vw;
+  width: 100vw;
+  margin: 0;
+}
+
+.panel {
+  background: #c8c885;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+}
+
+.panel-heading {
+  background-color: #eb7d06 !important;
+  background-image: none !important;
+}
+
+.create-post-btn {
+  color: black !important;
+  border: none;
+}
+
+.auth-error {
+  height: 45px;
+  color: red;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.post-desc {
+  margin-left: 20px;
+  color: green;
+  font-weight: 600;
+}
+
+.post-body {
+  height: 200px;
+  border: 1px solid darkgrey;
+  padding: 8px;
+  overflow-y: auto;
+  margin-bottom: 8px !important;
+}
+
+.post-author {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.comment-author {
+  color: green;
+  margin-bottom: 0px !important;
+  font-weight: 13px;
+  font-weight: 600;
+}
+
+a {
+  color: black !important;
+  font-weight: bold;
+}
+
+.post-title span a {
+  color: black !important;
+  font-weight: normal !important;
+}
+
+.comment-action-btn {
+  float: right !important;
+  height: 22px !important;
+  font-size: 12px !important;
+  padding: 0px 8px !important;
+  margin-left: 8px !important;
+}
+
+.loader {
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  margin-left: 50vw;
+  margin-top: 50vh;
+}
+
+.loader-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: black;
+  opacity: 0.5;
+  
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
