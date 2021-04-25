@@ -5,8 +5,9 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-
-mongoose.connect(process.env.MONGO_URL || 'mongodb+srv://wenkai:123@cluster0.07oyv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { promiseLibrary: require('bluebird') })
+//MONGO_URL
+//MONGODB_URI
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://wenkai:123@cluster0.07oyv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { promiseLibrary: require('bluebird') })
 .then(() =>  {
   console.log('connection successfull')
 })
